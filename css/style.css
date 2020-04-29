@@ -9,7 +9,7 @@ nav#menu {
 
 nav#menu ul{
     position: absolute;
-    top: -2%;
+    top: 5%;
     left: 65%;
 }
 
@@ -21,7 +21,9 @@ nav#menu li{
     padding: 5px;
     margin: 1px;
     transition: 1s;
+    border-radius: 10px;
 }
+
 
 nav#menu li:hover{
     background-color: cadetblue;
@@ -38,4 +40,20 @@ h1#logo {
 
 h1#logo span{
     color: #3D6CB9;
+}
+
+/* Interface */
+
+body{
+    background-image: url(img/Vector\ 2.png);
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-size: 60% 100%;
+}
+
+section#titulo-01 {
+    width: 48%;
+    height: 40%;
+    margin-top: 9%;
+    margin-left: 6%;
 }
