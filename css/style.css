@@ -99,6 +99,7 @@ body {
     font-size: 27px;
     font-weight: 100;
     margin-bottom: 3%;
+    color: rgb(75, 75, 75);
 }
 
 #titulo1 > p:last-of-type {
