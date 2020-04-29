@@ -1,0 +1,41 @@
+/* MEnu */
+nav#menu h1{
+    display: none;
+}
+
+nav#menu {
+    display: block;
+}
+
+nav#menu ul{
+    position: absolute;
+    top: -2%;
+    left: 65%;
+}
+
+nav#menu li{
+    text-decoration: none;
+    background-color: #22C2F2;
+    display: inline-block;
+    font-size: 20pt;
+    padding: 5px;
+    margin: 1px;
+    transition: 1s;
+}
+
+nav#menu li:hover{
+    background-color: cadetblue;
+}
+
+/* Logo */
+
+h1#logo {
+    color: #00A896;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 27;
+    margin-left: 3%;
+}
+
+h1#logo span{
+    color: #3D6CB9;
+}
