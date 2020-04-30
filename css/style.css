@@ -28,11 +28,12 @@ body {
     margin: 0 4%;   
     display: grid;
     grid-template-areas: "a a" "b c";
+    min-height: 100vh;
 }
 
 .grid1 {
     grid-area: a;
-    min-height: 190px;
+    min-height: 90px;
 }
 
 .grid2 {
