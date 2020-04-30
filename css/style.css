@@ -70,9 +70,13 @@ body {
     align-items: baseline;
     justify-content: space-around;
     list-style-type: none;
+}
+
+#lista-navegacao li {
     color: white;
     font-weight: 900;
     font-size: 24px;
+
 }
 
 #lista-navegacao > #entrar {
