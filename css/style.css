@@ -28,7 +28,7 @@ body {
     margin: 0 4%;   
     display: grid;
     grid-template-areas: "a a" "b c";
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 3fr;
     min-height: 100vh;
 }
@@ -95,7 +95,7 @@ body {
                 CORPO
 ***********************************/
 
-#titulo1 > h1{
+#titulo1 > h1 {
     font-size: 2.9rem;
     margin-bottom: 3%;
     min-width: 500px;
@@ -159,6 +159,15 @@ body {
    #interface {
         grid-template-rows: 1fr 5fr;
     }   
+    #titulo1 > h1 {
+        font-size: 2.7rem;
+    }
+    #titulo1 > p:first-of-type {
+        font-size: 1.8rem;
+    }
+    #titulo1 > p:last-of-type {
+        font-size: 1.4rem;
+    }
 }
 
 @media (max-width: 800px) {
@@ -168,7 +177,16 @@ body {
     }
     #interface {
         grid-template-rows: 1fr 8fr;
-    } 
+    }   
+    #titulo1 > h1 {
+        font-size: 2.3rem;
+    }
+    #titulo1 > p:first-of-type {
+        font-size: 1.4rem;
+    }
+    #titulo1 > p:last-of-type {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 600px) { 
@@ -177,6 +195,6 @@ body {
         line-height: 1.2;
     }
     #interface {
-        grid-template-rows: 1fr 12fr;
+        grid-template-rows: 1fr 10fr;
     } 
 }
