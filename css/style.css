@@ -32,7 +32,7 @@ body {
 
 .grid1 {
     grid-area: a;
-    min-height: 30vh;
+    min-height: 190px;
 }
 
 .grid2 {
