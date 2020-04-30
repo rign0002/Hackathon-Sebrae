@@ -76,7 +76,7 @@ body {
 #lista-navegacao li {
     color: white;
     font-weight: 900;
-    font-size: 24px;
+    font-size: 1.6rem;
 
 }
 
@@ -95,14 +95,14 @@ body {
 ***********************************/
 
 #titulo1 > h1{
-    font-size: 46px;
+    font-size: 3rem;
     line-height: 54px;
     margin-bottom: 3%;
     min-width: 500px;
 }
 
 #titulo1 > p:first-of-type {
-    font-size: 27px;
+    font-size: 2rem;
     font-weight: 100;
     margin-bottom: 3%;
     color: rgb(75, 75, 75);
@@ -110,7 +110,7 @@ body {
 
 #titulo1 > p:last-of-type {
     color: #00A896;
-    font-size: 22px;
+    font-size: 1.6rem;
 }
 
 #photo-inicial {
@@ -127,7 +127,7 @@ body {
 ***********************************/
 
 .help-local {
-    font-size: 46px;
+    font-size: 3.2rem;
     font-family: 'Fredoka One';
     font-weight: 100;
 }
@@ -146,3 +146,17 @@ body {
 /*********************************** 
             MEDIA QUERIES
 ***********************************/
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 14px;
+        line-height: 1.4;
+   }
+}
+
+@media (max-width: 800px) {
+    html {
+        font-size: 12px;
+        line-height: 1.3;
+    }
+}
