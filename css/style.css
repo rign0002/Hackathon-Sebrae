@@ -21,7 +21,7 @@ body {
     background-size: 55%;
 } 
 
-/**** Layout ****/
+/******* Layout *******/
 
 #interface {
     padding: 1%;
@@ -37,7 +37,7 @@ body {
 
 .grid2 {
     grid-area: b;
-    width: 50%;
+    width: 75%;
 }
 
 .grid3 {
@@ -107,6 +107,10 @@ body {
     font-size: 22px;
 }
 
+#photo-inicial {
+    width: 90%;
+    transform: translateY(-60px);
+}
 
 
 
