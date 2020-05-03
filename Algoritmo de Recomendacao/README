@@ -1,1 +1,2 @@
 Esse algoritmo recebe a identificação do cliente(Id), a identificação da empresa(Id) e a nota que esse cliente deu para esta empresa.
+Atualmente ele retorna o Id da empresa recomendada para o cliente, sendo a recomendção para cada cliente uma linha diferente.
