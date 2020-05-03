@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Quicksand|Nunito|Poppins&display=swap');
 
 /*********************************** 
              Padrão 
@@ -33,7 +33,7 @@ html {
     align-items: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 100vw;
-    padding-top: 5px;
+    padding: 5px 0 2px;
     position: sticky;
     top: 0px;
     background-color:rgba(255, 255, 255, 0.9);
@@ -45,7 +45,7 @@ html {
     color: white;
     border: none;
     width: 16rem;
-    height: 45px;
+    height: 4rem;
     border-radius: 10px;
     font-size: 1.5rem;
     font-weight: 900;
@@ -64,6 +64,7 @@ html {
     font-size: 18px;
     font-weight: 300;
     cursor: pointer;
+    background: transparent;
 }
 
 #botao-conta {
@@ -71,21 +72,14 @@ html {
     background: #00A896;
     border-radius: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 24px;
-    width: 130px;
-    height: 45px;
+    font-size: 1.5rem;
+    width: 12rem;
+    height: 4rem;
     cursor: pointer;
 }
 
-.sugestao {
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-}
-
-.botao-lado {
-    cursor: pointer;
+#botao-conta > img {
+    height: 1.5rem;
 }
 
 /*********************************** 
@@ -180,10 +174,44 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: left;
+}
+
+.sugestao {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 3% 1%;
+}
+
+.botao-lado {
+    cursor: pointer;
+    width: 100%;
 }
 
 .sugestao-imagem {
+ margin-bottom: 10%;
+ width: 90%;
+}
+
+.sugestao > h3 {
+    font-family: Nunito;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 2%;
+}
+
+.sugestao > p {
+    font-family: poppins;
+    font-weight: 100;
+    color: rgb(70, 70, 70);
     width: 90%;
+    margin-bottom: 6%;
+}
+
+.estrelas {
+    width: 75%;
 }
 
 /*********************************** 
