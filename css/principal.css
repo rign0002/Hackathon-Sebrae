@@ -14,3 +14,82 @@ html {
     line-height: 1.5;
     font-family: 'Quicksand', sans-serif;
 }
+
+/******* Layout *******/
+
+#interface {
+    padding: 1%;
+}
+
+
+/*********************************** 
+                NAV
+***********************************/
+
+#barra-superior {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100vw;
+    padding-top: 5px;
+}
+
+
+#botao-localidade {
+    background-color: #3D6CB9;
+    color: white;
+    border: none;
+    width: 254px;
+    height: 45px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: quicksand;
+    cursor: pointer;
+}
+
+#menuzinho {
+    width: 230px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#botao-ajuda {
+    border: none;
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+#botao-conta {
+    color: white;
+    background: #00A896;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 24px;
+    width: 130px;
+    height: 45px;
+    cursor: pointer;
+}
+
+
+
+/*********************************** 
+            A PARTE
+***********************************/
+
+.help-local {
+    font-size: 3.2rem;
+    font-family: 'Fredoka One';
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.verde {
+    color: #00A896;
+}
+
+.azul {
+    color: #3D6CB9;
+}
