@@ -29,7 +29,7 @@ body {
     display: grid;
     grid-template-areas: "a a" "b c";
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
     min-height: 90vh;
 }
 
@@ -100,7 +100,7 @@ body {
     margin-bottom: 4%;
     min-width: 500px;
     width: 90%;
-    line-height: 4rem;
+    line-height: 3.5rem;
 }
 
 #titulo1 > h1 > pre{
@@ -112,6 +112,7 @@ body {
     font-weight: 100;
     margin-bottom: 3%;
     color: rgb(75, 75, 75);
+    line-height: 2.5rem;
 }
 
 #titulo1 > p:last-of-type {
@@ -162,7 +163,7 @@ body {
         line-height: 1.4;
    }
    #interface {
-        grid-template-rows: 1fr 5fr;
+        grid-template-rows: 1fr 7fr;
     }   
     #titulo1 > h1 {
         font-size: 2.7rem;
@@ -181,7 +182,7 @@ body {
         line-height: 1.3;
     }
     #interface {
-        grid-template-rows: 1fr 8fr;
+        grid-template-rows: 1fr 9fr;
     }   
     #titulo1 > h1 {
         font-size: 2.3rem;
@@ -200,7 +201,7 @@ body {
         line-height: 1.2;
     }
     #interface {
-        grid-template-rows: 1fr 10fr;
+        grid-template-rows: 1fr 11fr;
     } 
 }
 
