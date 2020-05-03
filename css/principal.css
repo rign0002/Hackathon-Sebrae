@@ -78,6 +78,9 @@ html {
             CORPO
 ***********************************/
 
+
+/****** barra de pesquisa ******/
+
 #pesquisa-div { 
     border-radius: 10px;
     background: #3D6CB9;
@@ -135,6 +138,14 @@ html {
     padding-bottom: 10px;
     cursor: pointer;
 }
+
+
+/****** sugestões ******/
+
+#sugestoes-div {
+    margin-top: 7vh;
+}
+
 
 
 
