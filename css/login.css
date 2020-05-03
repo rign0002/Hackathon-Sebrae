@@ -1,0 +1,82 @@
+/*** Menu ***/
+
+
+/* Logo */
+
+h1#logo {
+    color: #00A896;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 27;
+    margin-left: 3%;
+}
+
+h1#logo span{
+    color: #3D6CB9;
+} 
+
+/*** Interface ***/
+
+section#corpo {
+	width: 50%;
+	float: left;
+}
+
+aside#lateral {
+	width: 50%;
+	float: right;
+}
+
+.full {
+	width: 100%;
+}
+
+footer {
+	clear: both;
+}
+
+div#corpo-lateral {
+	display: block;
+	position: absolute;
+	margin-top: 15%;
+	margin-bottom: 0px;
+	margin-left: 10%;
+}
+
+#cUser {
+	margin-right: 10px;
+}
+
+#cSenha {
+	margin-right: 14px;
+}
+
+/*** Imagens ***/
+
+#boneco {
+	position: absolute;
+	vertical-align: top;
+	margin-left: 10%;
+	top: 10px;
+}
+
+#baixo-1 {
+	width: 75%;
+	z-index: 2;
+}
+
+#celular {
+	position: absolute;
+	left: 10%;
+	top: 20%;
+	z-index: 1;
+}
+
+#celular {
+	width: 28%;
+}
+
+@media screen and (max-width: 800px) {
+	div#corpo-lateral {
+		top: 20%;
+	}
+}

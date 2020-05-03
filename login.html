@@ -1,0 +1,49 @@
+<php? 
+    session_start();
+?>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>HelpLocal</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+	<section id="corpo">
+		<h1 id="logo">HElp<span>Local</span></h1>
+		<img src="img/baixo-1.svg" id="baixo-1">
+		<img src="img/celular.svg" id="celular">
+	</section>
+	<aside id="lateral">
+	<section class="full">
+		<img src="img/boneco.svg" id="boneco">
+	<div id="corpo-lateral">
+	<form method="POST" action="valida.php">
+	<p>
+		<img src="img/icone-usuario.svg" id="cUser"><input type="email" name="temail" id="cMail" placeholder="login" required autofocus></br>
+		<img src="img/icone-senha.svg" id="cSenha"><input type="password" name="tsenha" id="cSenha" placeholder="digite sua senha" required="">
+	</p>
+	</form>
+	<p>
+		<php
+
+		if(isset?($_SESSION["loginEror"])){
+		     echo $_SESSION["loginError"];
+		     unset($_SESSION["loginError"]);
+	}
+		?>
+	</p>
+	<p>
+		<?php
+		if(isset($_SESSION["logindeslogado"])){
+		   echo $_SESSION["logindeslogado"];
+		   unset($_SESSION["logindeslogado"]);
+	}
+		?>
+	</p>
+	</div>
+	</section>
+	</aside>
+	<footer></footer>
+</body>
+</html>
