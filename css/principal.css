@@ -19,6 +19,7 @@ html {
 
 #interface {
     padding: 1.5% 10%;
+    min-height: 200vh;
 }
 
 
@@ -33,6 +34,9 @@ html {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 100vw;
     padding-top: 5px;
+    position: sticky;
+    top: 0px;
+    background-color:rgba(255, 255, 255, 0.9);
 }
 
 
@@ -73,6 +77,16 @@ html {
     cursor: pointer;
 }
 
+.sugestao {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.botao-lado {
+    cursor: pointer;
+}
 
 /*********************************** 
             CORPO
@@ -146,8 +160,31 @@ html {
     margin-top: 7vh;
 }
 
+#sugestoes-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
 
+#sugestoes-cabecalho > p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 125%;
+    text-decoration-line: underline;
+    color: #00A896;
+}
 
+#sugestoes {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sugestao-imagem {
+    width: 90%;
+}
 
 /*********************************** 
             A PARTE
