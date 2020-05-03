@@ -123,8 +123,8 @@ body {
 #photo-inicial {
     width: 75%;
     position: absolute;
-    right: 0;
-    top: -60px;
+    right: -10px;
+    top: 0;
     min-width: 100px;
 }
 
