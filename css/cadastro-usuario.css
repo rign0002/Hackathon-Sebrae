@@ -1,5 +1,37 @@
-/* interface */
+/***  Menu ***/
+
+
+/*** interface ***/
 
 body {
     background-color: #EBFBFF;
 }
+
+section#interface {
+    display: block;
+    background-color: #fff;
+    width: 65%;
+    height: 80%;
+    margin: 8% auto 5% auto;
+}
+
+section#interface h1{
+    text-align: center;
+    font-family: 'Baloo Tamma 2', cursive;
+    font-size: 20pt;
+}
+
+/* Logo */
+
+h1#logo {
+    color: #00A896;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 27;
+    margin-left: 3%;
+    margin-top: 10px;
+}
+
+h1#logo span{
+    color: #3D6CB9;
+}
+

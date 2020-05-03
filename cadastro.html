@@ -5,13 +5,27 @@
     <title>Cadastro</title>
     <link rel="stylesheet" href="css/cadastro-usuario.css"> 
 </head>
-<body>
+<body> 
+     
 <section id="interface">    
     <h1>Cadastro de novo usuario </h1>
-    <form>
+    <form method="POST" id="form">
         <fieldset><legend>identificação do usuario</legend>
-            <p><label>nome</label><input type="text"></br>
-            E-mail<input type="email"></p>    
+        <p>
+            <label for="cName">nome:</label><input name="tName" id="cName" type="text" placeholder="Nome completo"></br>
+            <label for="cUser">usuario:</label><input name="tUser" id="cUser" type="text" placeholder="Nome de usuario"></br>
+            <label for="cMail">E-mail:</label><input name="tMail" id="cMail" type="email" placeholder="Seu melhor e-mail"></br>
+            <label for="cSenha">Senha:</label><input name="tSenha" id="cSenha" type="password" placeholder="Crie aqui sua senha"></br>
+            <label for="cIdade">Data de nascimento:</label><input name="tIdade" id="cIdade" type="date"></br>
+            <label for="cNum">Telefone:</label><input name="tNum" id="cNum" placeholder="Número do seu celular">
+        </p>    
+        </fieldset>
+        <fieldset><legend>Gênero:</legend>
+            <p>
+                <input name="tSexo" id="cMasc" type="radio"><label for="cMasc">Masculino</label></br>
+                <input name="tSexo" id="cFem" type="radio"><label for="cFem">Feminino</label></br>
+                <input name="tSexo" id="cInd" type="radio"><label for="cInd"> Prefiro não dizer</label>
+            </p>
         </fieldset>
     </form>
 </section>    
