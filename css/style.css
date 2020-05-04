@@ -30,7 +30,7 @@ body {
     grid-template-areas: "a a" "b c";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 5fr;
-    min-height: 90vh;
+    min-height: 100vh;
 }
 
 .grid1 {
@@ -129,6 +129,15 @@ body {
 }
 
 
+/*********************************** 
+            RODAPE
+***********************************/
+
+#rodape {
+    margin-top: 5%;
+    min-height: 20vh;
+    background-color: #3D6CB9;;
+}
 
 
 
