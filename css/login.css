@@ -1,82 +1,133 @@
-/*** Menu ***/
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Quicksand|Poppins&display=swap');
 
 
-/* Logo */
+/*********************************** 
+             Padrão 
+***********************************/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
-h1#logo {
-    color: #00A896;
+html {
+    font-size: 16px;
+    line-height: 1.5;
     font-family: 'Quicksand', sans-serif;
-    font-size: 27;
-    margin-left: 3%;
 }
 
-h1#logo span{
+/******* Layout *******/
+
+body {
+    background: url(../img/fundo-login.svg) no-repeat;
+	background-size: 60%;
+	display: flex;
+	flex-direction: row;
+	margin-top: 1%;
+	padding-right: 5%;
+}
+
+header {
+	width: 70%;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	margin-top: 3%;
+	text-align: center;
+	width: 30%;
+}
+
+/****** Logo ******/
+
+#logo {
+    color: #00A896;
+	font-family: 'fredoka one', sans-serif;
+	font-weight: 100;
+    font-size: 3rem;
+    margin-left: 15%;
+}
+
+
+.verde {
+    color: #00A896;
+}
+
+.azul {
     color: #3D6CB9;
-} 
-
-/*** Interface ***/
-
-section#corpo {
-	width: 50%;
-	float: left;
 }
 
-aside#lateral {
-	width: 50%;
-	float: right;
+
+/*********************************** 
+            CORPO
+***********************************/
+
+#corpo > h1 {
+	font-weight: 900;
+	font-size: 2.5rem;
+	text-shadow: 0px 2px 4px rgb(100, 100, 100);
 }
 
-.full {
+#corpo > p:first-of-type {
+	text-decoration-line: underline;
+	color: #ECA400;
+	margin: 2%;
+}
+
+.input {
+	border: none;
+	border-bottom: 2px solid #D8D8D8;
+	margin-top: 10%;
+	padding: 5% 15% 4%;
+}
+
+.input::placeholder {
+	font-size: 1rem;
+	color: #CFCFCF;
+}
+
+#input-usuario {
+	background: url("../img/icone-usuario.svg") no-repeat left;
+}
+
+#input-senha {
+	background: url("../img/icone-senha.svg") no-repeat left;
+}
+
+#esqueceu-senha {
+	text-align: right;
+	margin-top: 3%;
+	color: #00A896;
+	font-size: 0.8rem;
+	letter-spacing: 0.035rem;
+}
+
+#criar-conta {
+	margin-top: 5%;
+	color: #333333;
+	font-weight: 800;
+	font-size: 1.5rem;
+	letter-spacing: 0.035em;
+}
+
+#botao-entrar {
+	border: none;
+	background: #3D6CB9;
+	border-radius: 15px;
+	color: white;
+	font-family: Poppins;
+	font-size: 1.5rem;
+	font-weight: 900;
 	width: 100%;
+	padding: 5% 0;
+	margin-top: 10%;
 }
 
-footer {
-	clear: both;
-}
-
-div#corpo-lateral {
-	display: block;
-	position: absolute;
-	margin-top: 15%;
-	margin-bottom: 0px;
-	margin-left: 10%;
-}
-
-#cUser {
-	margin-right: 10px;
-}
-
-#cSenha {
-	margin-right: 14px;
-}
-
-/*** Imagens ***/
-
-#boneco {
-	position: absolute;
-	vertical-align: top;
-	margin-left: 10%;
-	top: 10px;
-}
-
-#baixo-1 {
-	width: 75%;
-	z-index: 2;
-}
-
-#celular {
-	position: absolute;
-	left: 10%;
-	top: 20%;
-	z-index: 1;
-}
-
-#celular {
-	width: 28%;
-}
+/*********************************** 
+            MEDIA QUERIES
+***********************************/
 
 @media screen and (max-width: 800px) {
-	div#corpo-lateral {
-		top: 20%;
-	}
+	
 }

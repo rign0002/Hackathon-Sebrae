@@ -1,6 +1,3 @@
-<php? 
-    session_start();
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -9,41 +6,20 @@
 	<link rel="stylesheet" href="./css/login.css">
 </head>
 <body>
-	<section id="corpo">
-		<h1 id="logo">HElp<span>Local</span></h1>
-		<img src="./img/baixo-1.svg" id="baixo-1">
-		<img src="./img/celular.svg" id="celular">
-	</section>
-	<aside id="lateral">
-	<section class="full">
-		<img src="./img/boneco.svg" id="boneco">
-	<div id="corpo-lateral">
-	<form method="POST" action="valida.php">
-	<p>
-		<img src="./img/icone-usuario.svg" id="cUser"><input type="email" name="temail" id="cMail" placeholder="login" required autofocus></br>
-		<img src="./img/icone-senha.svg" id="cSenha"><input type="password" name="tsenha" id="cSenha" placeholder="digite sua senha" required="">
-	</p>
-	</form>
-	<p>
-		<php
-
-		if(isset?($_SESSION["loginEror"])){
-		     echo $_SESSION["loginError"];
-		     unset($_SESSION["loginError"]);
-	}
-		?>
-	</p>
-	<p>
-		<?php
-		if(isset($_SESSION["logindeslogado"])){
-		   echo $_SESSION["logindeslogado"];
-		   unset($_SESSION["logindeslogado"]);
-	}
-		?>
-	</p>
-	</div>
-	</section>
-	</aside>
-	<footer></footer>
+	<header >
+		<h1 id="logo" class="help-local">
+			<span class="verde">Help</span><span class="azul">Local</span>
+		</h1>
+	</header>
+	<main id="corpo">
+		<img src="./img/boneco.svg" id="boneco" />
+		<h1>BEM-VINDO</h1>
+		<p>Usuário / Administrador</p>
+		<input type="text" placeholder="Usuário" id="input-usuario" class="input"/>
+		<input type="password" placeholder="Senha" id="input-senha" class="input"/>
+		<a href="#" id="esqueceu-senha">Esqueceu a senha?</a>
+		<a href="#" id="criar-conta">Criar conta</a>
+		<button id="botao-entrar">ENTRAR</button>
+	</main>
 </body>
 </html>
