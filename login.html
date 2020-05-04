@@ -1,6 +1,4 @@
-<php? 
-    session_start();
-?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -18,29 +16,15 @@
 	<section class="full">
 		<img src="img/boneco.svg" id="boneco">
 	<div id="corpo-lateral">
-	<form method="POST" action="valida.php">
+	<form method="POST" action="login.php">
 	<p>
-		<img src="img/icone-usuario.svg" id="cUser"><input type="email" name="temail" id="cMail" placeholder="login" required autofocus></br>
-		<img src="img/icone-senha.svg" id="cSenha"><input type="password" name="tsenha" id="cSenha" placeholder="digite sua senha" required="">
+		<img src="img/icone-usuario.svg" id="cUser"><input type="email" name="login" id="cMail" placeholder="login" required autofocus></br>
+		<img src="img/icone-senha.svg" id="cSenha"><input type="password" name="senha" id="cSenha" placeholder="digite sua senha" required=""></br>
+		<input type="submit" value="entrar" name="entrar"></br>
+		<a href="cadastro.html">cadastre-se</a>
+
 	</p>
 	</form>
-	<p>
-		<php
-
-		if(isset?($_SESSION["loginEror"])){
-		     echo $_SESSION["loginError"];
-		     unset($_SESSION["loginError"]);
-	}
-		?>
-	</p>
-	<p>
-		<?php
-		if(isset($_SESSION["logindeslogado"])){
-		   echo $_SESSION["logindeslogado"];
-		   unset($_SESSION["logindeslogado"]);
-	}
-		?>
-	</p>
 	</div>
 	</section>
 	</aside>

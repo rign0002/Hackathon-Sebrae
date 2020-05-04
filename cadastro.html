@@ -9,24 +9,24 @@
      
 <section id="interface">    
     <h1>Cadastro de novo usuario </h1>
-    <form method="POST" id="form">
+    <form method="POST" action="cadastro.php" id="form">
         <fieldset><legend>identificação do usuario</legend>
         <p>
-            <label for="cName">nome:</label><input name="tName" id="cName" type="text" placeholder="Nome completo"></br>
-            <label for="cUser">usuario:</label><input name="tUser" id="cUser" type="text" placeholder="Nome de usuario"></br>
-            <label for="cMail">E-mail:</label><input name="tMail" id="cMail" type="email" placeholder="Seu melhor e-mail"></br>
-            <label for="cSenha">Senha:</label><input name="tSenha" id="cSenha" type="password" placeholder="Crie aqui sua senha"></br>
-            <label for="cIdade">Data de nascimento:</label><input name="tIdade" id="cIdade" type="date"></br>
-            <label for="cNum">Telefone:</label><input name="tNum" id="cNum" placeholder="Número do seu celular">
+            <label for="cName">nome:</label><input name="name" id="cName" type="text" placeholder="Nome completo" required></br>
+            <label for="cMail">E-mail:</label><input name="email" id="cMail" type="email" placeholder="Seu melhor e-mail" required></br>
+            <label for="cSenha">Senha:</label><input name="senha" id="cSenha" type="password" placeholder="Crie aqui sua senha" required></br>
+            <label for="cIdade">Data de nascimento:</label><input name="idade" id="cIdade" type="date" required></br>
+            <label for="cNum">Telefone:</label><input type="number" name="num" id="cNum" placeholder="Número do seu celular" required>
         </p>    
         </fieldset>
         <fieldset><legend>Gênero:</legend>
             <p>
-                <input name="tSexo" id="cMasc" type="radio"><label for="cMasc">Masculino</label></br>
-                <input name="tSexo" id="cFem" type="radio"><label for="cFem">Feminino</label></br>
-                <input name="tSexo" id="cInd" type="radio"><label for="cInd"> Prefiro não dizer</label>
+                <input name="sexo" id="cMasc" type="radio"><label for="cMasc">Masculino</label></br>
+                <input name="sexo" id="cFem" type="radio"><label for="cFem">Feminino</label></br>
+                <input name="sexo" id="cInd" type="radio"><label for="cInd"> Prefiro não dizer</label>
             </p>
         </fieldset>
+        <input type="submit" value="cadastrar" id="cadastrar" name="cadastrar">
     </form>
 </section>    
 </body>
