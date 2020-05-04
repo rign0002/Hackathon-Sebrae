@@ -4,7 +4,7 @@ $login=$_POST['login'];
 
 $entrar=$_POST['entrar'];
 
-senha=md5($_POST['senha']);
+$senha=md5($_POST['senha']);
 
 $connect=mysql_connect('localhost','id13539777_equipemegahackdev','GJ+hy2@~8%?kla\G');
 
