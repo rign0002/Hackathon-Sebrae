@@ -1,35 +1,35 @@
 <?php
 
-$login=$_POST['login'];
+// $login=$_POST['login'];
 
-$entrar=$_POST['entrar'];
+// $entrar=$_POST['entrar'];
 
-$senha=md5($_POST['senha']);
+// $senha=md5($_POST['senha']);
 
-$connect=mysql_connect('localhost','id13539777_equipemegahackdev','GJ+hy2@~8%?kla\G');
+// $connect=mysql_connect('localhost','id13539777_equipemegahackdev','GJ+hy2@~8%?kla\G');
 
-$db=mysql_select_db('id13539777_programacion');
+// $db=mysql_select_db('id13539777_programacion');
 
-if (isset($entrar)) {
+// if (isset($entrar)) {
 
              
 
-      $verifica = mysql_query(“SELECT * FROM usuarios WHERE login = ‘$login’ AND senha = ‘$senha'”) or die(“erro ao selecionar”);
+//       $verifica = mysql_query(“SELECT * FROM usuarios WHERE login = ‘$login’ AND senha = ‘$senha'”) or die(“erro ao selecionar”);
 
-        if (mysql_num_rows($verifica)<=0){
+//         if (mysql_num_rows($verifica)<=0){
 
-          echo”<script language=’javascript’ type=’text/javascript’>alert(‘Login e/ou senha incorretos’);window.location.href=’login.html’;</script>”;
+//           echo”<script language=’javascript’ type=’text/javascript’>alert(‘Login e/ou senha incorretos’);window.location.href=’login.html’;</script>”;
 
-          die();
+//           die();
 
-        }else{
+//         }else{
 
-          setcookie(“login”,$login);
+//           setcookie(“login”,$login);
 
-          header(“Location:principal.html”);
+//           header(“Location:principal.html”);
 
-        }
+//         }
 
-    }
+//     }
 
 ?>

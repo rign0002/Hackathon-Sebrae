@@ -1,56 +1,56 @@
 <?php
 
-$login = $_POST['email'];
-$senha = MD5($_POST['senha']);
-$nome = $_POST['name'];
-$date = $_POST['idade'];
-$num = $_POST['num'];
-$sexo = $_POST['sexo'];
-$connect = mysql_connect(‘localhost’,’id13539777_equipemegahackdev’,’GJ+hy2@~8%?kla\G’);
+// $login = $_POST['email'];
+// $senha = MD5($_POST['senha']);
+// $nome = $_POST['name'];
+// $date = $_POST['idade'];
+// $num = $_POST['num'];
+// $sexo = $_POST['sexo'];
+// $connect = mysql_connect(‘localhost’,’id13539777_equipemegahackdev’,’GJ+hy2@~8%?kla\G’);
 
-$db = mysql_select_db(‘id13539777_programacion’);
+// $db = mysql_select_db(‘id13539777_programacion’);
 
-$query_select = “SELECT login FROM usuarios WHERE login = ‘$login'”;
+// $query_select = “SELECT login FROM usuarios WHERE login = ‘$login'”;
 
-$select = mysql_query($query_select,$connect);
+// $select = mysql_query($query_select,$connect);
 
-$array = mysql_fetch_array($select);
+// $array = mysql_fetch_array($select);
 
-$logarray = $array[‘login’];
+// $logarray = $array[‘login’];
 
-if($login == “” || $login == null){
+// if($login == “” || $login == null){
 
-    echo”<script language=’javascript’ type=’text/javascript’>alert(‘O campo login deve ser preenchido’);window.location.href=’cadastro.html’;</script>”;
+//     echo”<script language=’javascript’ type=’text/javascript’>alert(‘O campo login deve ser preenchido’);window.location.href=’cadastro.html’;</script>”;
 
-    }else{
+//     }else{
 
-      if($logarray == $login){
+//       if($logarray == $login){
 
-        echo”<script language=’javascript’ type=’text/javascript’>alert(‘Esse login já existe’);window.location.href=’cadastro.html’;</script>”;
+//         echo”<script language=’javascript’ type=’text/javascript’>alert(‘Esse login já existe’);window.location.href=’cadastro.html’;</script>”;
 
-        die();
+//         die();
 
  
 
-      }else{
+//       }else{
 
-        $query = “INSERT INTO usuarios (login,senha) VALUES (‘$login’,’$senha’)”;
+//         $query = “INSERT INTO usuarios (login,senha) VALUES (‘$login’,’$senha’)”;
 
-        $insert = mysql_query($query,$connect);
+//         $insert = mysql_query($query,$connect);
 
-        if($insert){
+//         if($insert){
 
-          echo”<script language=’javascript’ type=’text/javascript’>alert(‘Usuário cadastrado com sucesso!’);window.location.href=’login.html'</script>”;
+//           echo”<script language=’javascript’ type=’text/javascript’>alert(‘Usuário cadastrado com sucesso!’);window.location.href=’login.html'</script>”;
 
-        }else{
+//         }else{
 
-          echo”<script language=’javascript’ type=’text/javascript’>alert(‘Não foi possível cadastrar esse usuário’);window.location.href=’cadastro.html'</script>”;
+//           echo”<script language=’javascript’ type=’text/javascript’>alert(‘Não foi possível cadastrar esse usuário’);window.location.href=’cadastro.html'</script>”;
 
-        }
+//         }
 
-      }
+//       }
 
-    }
+//     }
 
 
 ?>
