@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/principal.css"> 
+    <link rel="stylesheet" href="./css/principal.css"> 
     <title>HelpLocal</title>
 </head>
 <body>
@@ -12,16 +12,57 @@
         <h1 class="help-local">
             <span class="verde">Help</span><span class="azul">Local</span>
         </h1>
-        <button id="botao-localidade">Localidade&nbsp;<img src="img/setinha.svg" /></button>
+        <button id="botao-localidade">Localidade&nbsp;<img src="./img/setinha.svg" /></button>
         <div id="menuzinho">
             <button id="botao-ajuda">Ajuda</button>
-            <button id="botao-conta"><img src="img/minha-conta.svg" /> Conta</a>
+            <button id="botao-conta"><img src="./img/minha-conta.svg" /> Conta</a>
         </div>
     </nav>
     <section id="interface">
         <div id="pesquisa-div">
-            <div id="">
-
+            <div id="barra-pesquisa-div">
+                <input id="barra-pesquisa"" type="text" placeholder="Pesquise aqui..." >
+                <button id="enviar-pesquisa">Enviar</button>
+            </div>
+            <div id="filtros-div">
+                <button class="botao-filtro">Categorias&nbsp;<img src="./img/setinha.svg"/></button>
+                <button class="botao-filtro">Filtros&nbsp;<img src="./img/setinha.svg"/></button>
+                <button class="botao-filtro">Lorem Ipsum&nbsp;<img src="./img/setinha.svg"/></button>
+            </div>
+        </div>
+        <div id="sugestoes-div">
+            <div id="sugestoes-cabecalho">
+                <h1>Sugestões para você:</h1>
+                <p>Ver todos >></p>
+            </div>
+            <div id="sugestoes">
+                <div class="sugestao">
+                    <img src="./img/imagem-pra-trocar.svg" class="sugestao-imagem"/>
+                    <h3>Loja do seu Zé</h3>
+                    <p>Materiais antigos, artigos e decoração</p>
+                    <img src="./img/estrelas.svg" class="estrelas"/>
+                </div>
+                <div class="sugestao">
+                    <img src="./img/imagem-pra-trocar.svg" class="sugestao-imagem"/>
+                    <h3>Loja do seu Zé</h3>
+                    <p>Materiais antigos, artigos e decoração</p>
+                    <img src="./img/estrelas.svg" class="estrelas"/>
+                </div>
+                <div class="sugestao">
+                    <img src="./img/imagem-pra-trocar.svg" class="sugestao-imagem"/>
+                    <h3>Loja do seu Zé</h3>
+                    <p>Materiais antigos, artigos e decoração</p>
+                    <img src="./img/estrelas.svg" class="estrelas"/>
+                </div>
+                <div class="sugestao">
+                    <img src="./img/imagem-pra-trocar.svg" class="sugestao-imagem"/>
+                    <h3>Loja do seu Zé</h3>
+                    <p>Materiais antigos, artigos e decoração</p>
+                    <img src="./img/estrelas.svg" class="estrelas"/>              
+                </div>   
+                <div class="botao-lado-div">
+                    <img src="./img/botao-lado.svg" class="botao-lado"/>
+                </div>
             </div>
         </div>
     </section>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Quicksand|Nunito|Poppins&display=swap');
 
 /*********************************** 
              Padrão 
@@ -18,7 +18,8 @@ html {
 /******* Layout *******/
 
 #interface {
-    padding: 10%;
+    padding: 1.5% 10%;
+    min-height: 200vh;
 }
 
 
@@ -32,7 +33,10 @@ html {
     align-items: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 100vw;
-    padding-top: 5px;
+    padding: 5px 0 2px;
+    position: sticky;
+    top: 0px;
+    background-color:rgba(255, 255, 255, 0.9);
 }
 
 
@@ -40,8 +44,8 @@ html {
     background-color: #3D6CB9;
     color: white;
     border: none;
-    width: 254px;
-    height: 45px;
+    width: 16rem;
+    height: 4rem;
     border-radius: 10px;
     font-size: 1.5rem;
     font-weight: 900;
@@ -50,9 +54,9 @@ html {
 }
 
 #menuzinho {
-    width: 230px;
+    width: 260px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 #botao-ajuda {
@@ -60,6 +64,7 @@ html {
     font-size: 18px;
     font-weight: 300;
     cursor: pointer;
+    background: transparent;
 }
 
 #botao-conta {
@@ -67,20 +72,147 @@ html {
     background: #00A896;
     border-radius: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 24px;
-    width: 130px;
-    height: 45px;
+    font-size: 1.5rem;
+    width: 12rem;
+    height: 4rem;
     cursor: pointer;
 }
 
+#botao-conta > img {
+    height: 1.5rem;
+}
 
 /*********************************** 
             CORPO
 ***********************************/
 
 
+/****** barra de pesquisa ******/
+
+#pesquisa-div { 
+    border-radius: 10px;
+    background: #3D6CB9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#barra-pesquisa-div {
+    text-align: center;
+    padding: 15px 30px;
+}
+
+#barra-pesquisa {
+    color: #AEAEAE;
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: none;
+    height: 4rem;
+    width: 40rem;
+    padding: 1% 2%;
+    font-size: 1.1rem;
+    color: #AEAEAE;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 800;
+    margin-right: 2%;
+}
+
+#enviar-pesquisa {
+    color: white;
+    background: #ECA400;
+    border-radius: 15px;
+    border: none;
+    height: 4rem;
+    width: 11rem;
+    font-size: 1.5rem;
+    font-family: Quicksand;
+    font-weight: 900;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#filtros-div {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1%;
+}
+
+.botao-filtro {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    font-family: quicksand;
+    font-weight: 900;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
 
 
+/****** sugestões ******/
+
+#sugestoes-div {
+    margin-top: 7vh;
+}
+
+#sugestoes-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+#sugestoes-cabecalho > p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 125%;
+    text-decoration-line: underline;
+    color: #00A896;
+}
+
+#sugestoes {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.sugestao {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 3% 1%;
+}
+
+.botao-lado {
+    cursor: pointer;
+    width: 100%;
+}
+
+.sugestao-imagem {
+ margin-bottom: 10%;
+ width: 90%;
+}
+
+.sugestao > h3 {
+    font-family: Nunito;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 2%;
+}
+
+.sugestao > p {
+    font-family: poppins;
+    font-weight: 100;
+    color: rgb(70, 70, 70);
+    width: 90%;
+    margin-bottom: 6%;
+}
+
+.estrelas {
+    width: 75%;
+}
 
 /*********************************** 
             A PARTE
@@ -100,3 +232,40 @@ html {
 .azul {
     color: #3D6CB9;
 }
+
+
+
+/*********************************** 
+            MEDIA QUERIES
+***********************************/
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 14px;
+        line-height: 1.4;
+   }
+   #barra-pesquisa {
+       width: 29.5rem;
+   }
+}
+
+@media (max-width: 800px) {
+    html {
+        font-size: 12px;
+        line-height: 1.3;
+    }
+    #barra-pesquisa {
+        width: 20rem;
+    }
+}
+
+@media (max-width: 600px) { 
+    html {
+        font-size: 10px;
+        line-height: 1.2;
+    }
+}
+
+
+
+
