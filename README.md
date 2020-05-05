@@ -18,6 +18,6 @@ ex: João quer uma peça para sua moto, ao iniciar o HelpLocal ele prorcura por 
 
 3- Whatsapp/Número: Essa opção é opcional, deixando em seu pérfil a mostra para todo o publíco.
 
-* Prorcura de serviços - Ao permitir a função de localização, em um raio de 3km séra mostrado todos os serviços, como oficina; padaria; mercadinho e etc ..... , o campo será mudado entre 3km; 5km; 10km e 15km.
+* Procura de serviços - Ao permitir a função de localização, em um raio de 3km séra mostrado todos os serviços, como oficina; padaria; mercadinho e etc ..... , o campo será mudado entre 3km; 5km; 10km e 15km.
 
 
